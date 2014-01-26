@@ -1,12 +1,12 @@
-if exists("g:loaded_dir_in_nautilus")
+if exists("g:loaded_dir_in_tux")
   finish
 endif
-let g:loaded_dir_in_nautilus = 1
+let g:loaded_dir_in_tux = 1
 
-function! s:DirInnautilus()
-  silent! ! nautilus `dirname %`
+function! s:DirInTux()
+  silent! ! xdg-open `dirname %`
   " For terminal Vim not to look messed up.
   redraw!
 endfunction
 
-command! Dir call <SID>DirInnautilus()
+command! Dir call <SID>DirInTux()

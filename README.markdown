@@ -1,12 +1,13 @@
-# Dir in Nautilus plugin for Vim
+# Dir in Linux plugin for Vim
 
-Run `:Dir` to explore the current file's dir in Nautilus.
+Run `:Dir` to explore the current file's dir in Linux.
+
+Uses xdg-open to open it.
 
 ### Install
 
->  git clone git://github.com/abhishekkr/vim-dir.git /tmp/vim-dir
 >  mkdir -p ~/.vim/plugin
->  cp /tmp/vim-dir/plugin/*vim ~/.vim/plugin/
+>  curl -Lk --output ~/.vim/plugin/dir_in_nautilus.vim  https://raw.github.com/abhishekkr/vim-dir/master/plugin/dir_in_nautilus.vim
 
 ### Via Pathogen
 
